@@ -1,0 +1,6 @@
+<h1>{{title}}</h1>
+<form [formGroup]="pwaForm" novalidate>
+  <label>CSS Color:</label>
+  <input type="text" label="Theme Color" formControlName="themeColor" />
+  <div *ngIf="pwaForm.controls.themeColor.errors">Invalid CSS Color</div>
+</form>
